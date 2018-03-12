@@ -76,6 +76,7 @@ void LinkedStack<T>::Push(const T& data){
     top_ = append;  //new node at top (LIFO)
     size_++;  //Adjust size
 }//end Push 
+
 template<class T>
 void LinkedStack<T>::Pop(){
   if(IsEmpty())
@@ -86,6 +87,7 @@ void LinkedStack<T>::Pop(){
   delete pop_node;  //delete data (release memory)
   size_--;  //adjust size
 }//end Pop
+
 template<class T>
 void LinkedStack<T>::Erase(){
     while(!IsEmpty()) //stack has data 
