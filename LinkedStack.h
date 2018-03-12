@@ -22,8 +22,6 @@
 template<class T>
 class LinkedStack {
   public:
-  
-  
     //@desc default constructor intializes 
     //      default values for private members
     //@post stack has initial values, rids class of
