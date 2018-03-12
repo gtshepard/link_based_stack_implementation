@@ -64,7 +64,7 @@ T LinkedStack<T>::Peek() const {
 }//end Peek
 
 template<class T>
-size_t LinkedStack<T>::get_size() const{return size_;}//end get_size
+size_t LinkedStack<T>::get_size() const{return size_;}  //end get_size
 
 //---------------------------
 // mutable public methods
