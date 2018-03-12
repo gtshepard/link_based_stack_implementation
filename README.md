@@ -1,33 +1,35 @@
 ------------------------------------------------------------------------------------------------------------------------------
 ### Title 
 test_linked_stack.cpp
+***
 ### Author 
 Garrison Shepard
+***
 ### Created 
 March 8th, 2018
-
+***
 ### Description  
 Tests This is an implementation of a Linked Stack data structure
 Tests are run against operations to verify correctness.
-
+***
 ### Purpose 
 To provide a linked based stack implementation for general use 
 and study. Of Interest to those preparing for software engineering 
 interviews and studying Computer Science. Originally created for a CS community 
 on a college campus for interview preparation, now open for public use.
-
+***
 ### Usage
 ./test_linked_stack_implementation
-
+***
 ### Build with 
 g++ -g -std=c++11 -Wall -I -c test_linked_stack.cpp -o test_linked_stack.o
 g++ -g -std=c++11 -Wall -o ./test_linked_stack_implementation test_linked_stack.o 
                                   -I.-L/usr/lib -L/usr/local/lib -lm 
 Or Build with 'make all' command (for this convenience a make file has been include). 
-
+***
 ### Modifications 
 no modifications since creation date.
-
+***
 ### Testing
 test_linked_stack.cpp contains a series of test cases that verfiy the correctness
 of the operations of the provided stack implementation. 
@@ -40,7 +42,7 @@ ERR_MSG macro defined in test_linked_stack.cpp
 ERR_MSG macro provides information on the where abouts of the error in the tester 
 program to narrow down the source of the problem in the code.
 
-
+***
 ### Design Advantages 
 There is flexibility in the implementation of stack as long as all the integrity of 
 the stacks operations and runtime bounds on these are preserved.
@@ -66,7 +68,7 @@ never occurs due to the nature of the program. Allocating an array up font that 
 is wasteful in terms of memory usage. 
 
 A link based implementation was chosen for this design because the number entries cannot be predetermined.
-
+***
 ### Operation Runtimes
 IsEmpty()  - Runtime O(1)
 Push()     - Runtime O(1)
@@ -74,7 +76,7 @@ Pop()      - Runtime O(1)
 Peek()     - Runtime O(1)         
 Erase()    - Runtime O(n)
 Copy()     - Runtime O(n)
-
+***
 ### Closing Notes
 Program was compiled with g++ and tested on Fedora Linux 24. This program has not been tested on other 
 systems. Any questions regarding this program can be directed to the author by email.
