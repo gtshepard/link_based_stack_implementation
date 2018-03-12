@@ -77,8 +77,7 @@ void TestStack(){
     std::cout << "Push() Test Successful" << std::endl; //display result to standard output (Terminal)
   }
   Format(); //format terminal for test result readability 
-  
-  
+ 
   if(stack_a.IsEmpty() != false){ //test IsEmpty() 
     ERR_MSG; //display error message
     std::cerr << "IsEmpty() Test Failed" << std::endl; //display result to standard output (Terminal)
