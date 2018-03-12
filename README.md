@@ -21,7 +21,7 @@ on a college campus for interview preparation, now open for public use.
 ### Usage
 ./test_linked_stack_implementation
 ***
-### Build with 
+### Build With 
 g++ -g -std=c++11 -Wall -I -c test_linked_stack.cpp -o test_linked_stack.o
 g++ -g -std=c++11 -Wall -o ./test_linked_stack_implementation test_linked_stack.o 
                                   -I.-L/usr/lib -L/usr/local/lib -lm 
