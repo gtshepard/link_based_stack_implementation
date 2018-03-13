@@ -131,7 +131,7 @@ void TestStack(){
     ERR_MSG;  //display error message
     TEST_FAIL("Assignment Operator"); //display result to standard output (Terminal)
   }else{
-    TEST_SUCCESS("Assignemnt Operator"); //display result to standard output (Terminal)
+    TEST_SUCCESS("Assignment Operator"); //display result to standard output (Terminal)
   }
   Format(); //format terminal for test result readability 
 }//end TestStack
