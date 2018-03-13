@@ -15,7 +15,8 @@
 //
 //  Build with :    Make all (use make file included )
 //
-//  Modifications : no modifications since creation date.
+//  Modifications : On March 12th improved tester file, by adding additional macros. 
+//                  minor bug fix to tester file. 
 //-----------------------------------------------------------------
 #include "LinkedStack.h"
 template<class T>
@@ -64,7 +65,7 @@ T LinkedStack<T>::Peek() const {
 }//end Peek
 
 template<class T>
-size_t LinkedStack<T>::get_size() const{return size_;}  //end get_size
+int LinkedStack<T>::get_size() const{return size_;}//end get_size
 
 //---------------------------
 // mutable public methods
@@ -76,7 +77,6 @@ void LinkedStack<T>::Push(const T& data){
     top_ = append;  //new node at top (LIFO)
     size_++;  //Adjust size
 }//end Push 
-
 template<class T>
 void LinkedStack<T>::Pop(){
   if(IsEmpty())
@@ -87,7 +87,6 @@ void LinkedStack<T>::Pop(){
   delete pop_node;  //delete data (release memory)
   size_--;  //adjust size
 }//end Pop
-
 template<class T>
 void LinkedStack<T>::Erase(){
     while(!IsEmpty()) //stack has data 

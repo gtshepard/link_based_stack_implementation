@@ -9,13 +9,14 @@
 //  Purpose :       To provide a linked based stack implementation for general use 
 //                  and study. Of Interest to those preparing for software engineering 
 //                  interviews and studying Computer Science. Originally created for CS community 
-//                  on college campus for interview preparation, now open for public use.
+//                  on college campus for interview preperation, now open for public use.
 //
 //  Usage :         ./test_linked_stack_implementation
 //
-//  Build with :    Make all (use make file included)
+//  Build with :    Make all (use make file included )
 //
-//  Modifications : no modifications since creation date.
+//  Modifications : On March 12th improved tester file, by adding additional macros. 
+//                  minor bug fix to tester file. 
 //-----------------------------------------------------------------
 #ifndef LINKED_STACK_H_
 #define LINKED_STACK_H_
@@ -75,14 +76,14 @@ class LinkedStack {
     //@desc getter method for size_
     //@mutable method is non-mutable, cannot mutate stack
     //@return size_t, number for data entries in stack
-    size_t get_size() const;
+    int get_size() const;
   
     //---------------------------
     // mutable public methods
     //---------------------------
 
     //@desc     stores a data entry on top of the stack 
-    //@param    T data, data of generic type to be put into the stack
+    //@param    const T& data, data of generic type to be put into the stack
     //@mutable  method is mutable, can mutate the stack
     //@post     stack now contains an additional data entry, size of stack increased.
     void Push(const T& data);
@@ -102,7 +103,8 @@ class LinkedStack {
     //@pre      stack must have data entries (no empty) for data to removed, 
     //          otherwise a call to this method is extraneous (useless).
     //@mutable  method is mutable, can mutate stack
-    //@post     stack contains no data entries, if no data entries exist
+    //@post     stack contains no   stack must have data entries (no empty) for data to removed, 
+    //          otherwise a call to this method is extraneous (useless).data entries, if no data entries exist
     //          upon call to method, the method terminates safely and 
     //          and program continues to run
     void Erase();
@@ -117,7 +119,7 @@ class LinkedStack {
     };//end Node
   
     LinkedStack::Node* top_;  //node at top of stack 
-    size_t size_; //number of data entries in stack
+    int size_; //number of data entries in stack
     
     //---------------------------
     // mutable private methods
